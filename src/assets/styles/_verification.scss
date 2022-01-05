@@ -1,0 +1,373 @@
+/* Verification */
+
+$launchpad-black1: $sidebar-bg;
+$launchpad-black2: rgba(0, 0, 0, 0.4);
+
+$launchpad-button-bg: $sidebar-menu-bg;
+$launchpad-badge-bg: #22a1f7ad;
+
+.div-verification {
+    .verification-title{
+        width: 100%;
+        color: white;
+        margin: 0em auto;
+        font-size: 30px;
+        font-weight: bolder;
+        text-align: center;
+    }
+    .verification-description{
+        width: 100%;
+        text-align: center;
+        color: $body-color;
+        font-size: 15px;
+        margin-bottom: 2em;
+    }
+
+    label {
+        font-size: 14px;
+        color: white;
+    }
+
+    .col-step-card {
+        margin: 0 auto;
+        width: 100%;
+
+    }
+
+    .step-card {
+        // border: 1px solid rgba(0, 0, 0, 0.125);
+        // background-color: #0b152d;
+        // padding: 1.75rem 1.5625rem;
+        // background: transparent;
+        // border: none;
+
+        .MuiPaper-root{
+            margin-bottom: 0em !important;
+        }
+
+        .card-body {
+            padding-top: 0.5rem;
+            padding-bottom: 0;
+        }
+
+        .MuiPaper-root{
+            background-color: rgba(0, 0, 0, 0) !important;
+            color: white !important;
+            margin-bottom: 1em;
+        }
+        
+        .MuiPaper-elevation1{
+            box-shadow: none !important;
+        }
+
+        input:-internal-autofill-selected{
+            background-color: -internal-light-dark(black, rgba(70, 90, 126, 0.4)) !important;
+            color: -internal-light-dark(white, black) !important;
+        }
+
+        span {
+            height: 28px;
+            line-height: 28px;
+            font-size: 18px;
+            font-weight: bold;
+            font-family: Raleway;
+            font-style: normal;
+        }
+
+        span.text-balance, span.btn-show-example-csv{
+            font-size: 14px;
+            float: right;
+            line-height: 1;
+            vertical-align: top;
+            margin-bottom: 0.2rem;
+            color: white;
+        }
+    
+        .btn-show-example-csv{
+            margin-bottom: 0 !important;
+            height: 20px !important;
+            color: $table-border-color !important;
+            cursor: pointer;
+        }
+
+        .react-file-reader{
+            margin-bottom: 0 !important;
+            cursor: pointer;
+            margin-top: -0.5em;
+            border-radius: 5px;
+            width: 165px;
+            height: 35px;
+            padding: 6px 16px;
+            border: 1px solid $launchpad-button-bg;
+            background: $launchpad-button-bg;
+            float: right;
+            font-size: 15px;
+            color: white;
+        }
+        .react-file-reader:hover{
+            opacity: 0.7;
+        }
+
+        .step-badge {
+            border-radius: 100%;
+            background: $launchpad-badge-bg;
+            width: 28px;
+            height: 28px;
+            font-size: 14px;
+            color: $body-color;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .card-title {
+            display: flex;
+            align-items: center;
+        }
+
+        .title-content {
+            margin-left: 0.8em;
+        }
+
+        .form-address{
+            .lable-table{
+                margin-top: 2em;
+            }
+        }
+
+        .forms-sample {
+            // margin-top: 4em;
+            margin: 1em auto;
+            width: 80%;
+            .h-token-form-group {
+                max-width: 400px;                
+            }
+            .form-group.h-form-group {
+                // max-width: 400px;
+                margin-top: 2em;
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+
+                label {
+                    margin-bottom: 0px;
+                }
+
+                input {
+                    float: right;
+                }
+            }
+
+            .btn {
+                margin-top: 0.5em;
+                border-radius: 20px;
+                width: 70px;
+                height: 35px;
+                padding: 8px 16px;
+            }
+
+            .btn:hover {
+                opacity: 0.7;
+            }
+
+            .btn-back {
+                border: 1px solid $body-color;
+                color: $body-color;
+                background: transparent;
+                margin-right: 1em;
+            }
+
+            .btn-next,
+            .btn-finish,
+            .btn-submit {
+                background: $launchpad-button-bg;
+                color: white;
+            }
+
+            .btn-finish,
+            .btn-submit {
+                width: 100px;
+            }
+
+            .btn-upload{
+                margin-top: -0.5em;
+                border-radius: 5px;
+                width: 170px;
+                height: 35px;
+                padding: 8px 16px;
+                border: 1px solid $launchpad-button-bg;
+                background: $launchpad-button-bg;
+                float: right;
+            }
+            
+            .btn-check{
+                width: 80px;
+                margin-top: 1em;
+            }
+            .lable-table{
+                width: 100%;
+            }
+        }
+
+        .forms-sample.no-margin-top {
+            margin-top: 0;
+        }
+
+        .form-control {
+            background-color: $launchpad-black2;
+            // border: none;
+            border-radius: 6px;
+        }
+    }
+
+    .col-step-finalize-card {
+        margin-top: 3em !important;
+        height: 700px;
+        background-color: $launchpad-black2;
+        border-radius: 10px;
+        padding: 5% 5% calc(5% + 40px) 5%;
+
+    }
+
+    .row-header{
+        width: 70%;
+        margin: 0 auto;
+    }
+    .token-address-container{
+        background-color: $sidebar-bg;
+        border-radius: 5px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    #inputTokenAddress{
+        margin-bottom: 2em;
+    }
+
+
+    .div-warning{
+        margin-top: 1em;
+        border: 1px solid #fc3c63;
+        background: rgba(250, 55, 100, .2);
+        padding: 1em;
+        color: #fc3c63;
+        border-radius:5px;
+    }
+
+
+}
+
+
+.mobile-heading{
+    display: none;
+}
+
+.div-ace-editor:hover{
+    border-color: 1px solid white !important;
+}
+.div-ace-editor{
+    background-color: #0F0F17;
+    border-radius: 6px;
+    border: 1px solid #80bdff !important;
+    padding: 10px 10px;
+    .ace_editor.ace-tm{
+        background-color: #0F0F17;
+        color: white;
+        .ace_gutter{
+            background-color: #0F0F17;
+            border-right: 1px solid grey !important;
+        }
+        .ace_cursor{
+            color: white;
+            // top: 68px !important;
+            // left: 8px !important;
+        }
+        .ace_gutter-cell{
+            color: #80bdff !important;
+        }
+
+        .ace_gutter-active-line{
+            background-color: #1b3156;
+        }
+    }
+
+
+    .ace_line{
+        padding-left: 4px;
+        font-weight: 100;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .div-verification {
+        .row-header{
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .div-verification {
+        .fees-card {
+            span {
+                font-size: 1.6vw !important;
+                margin-bottom: 13px;
+            }
+
+            i {
+                margin-bottom: 13px;
+            }
+
+            img {
+                width: 120px;
+                margin-bottom: 13px;
+            }
+        }
+    }
+
+    .token-address-container{
+        background-color: $sidebar-bg;
+        padding-right: 44.88px;
+        flex-wrap: wrap-reverse;
+        justify-content: space-evenly;
+    }
+}
+
+@media screen and (max-width: 991px) {  
+    .div-verification {
+        .page-header{
+            display: block !important;
+            text-align: end;
+            h1{
+                display: none;
+            }
+        }
+       
+        .mobile-heading{
+            display: block;
+            font-size: 24px;
+            text-align: center;
+            margin-top: 40px;
+        }
+        .create-sale-card{
+            .card-body{
+                width: 100%;
+            }
+        }
+        .token-address-container{
+            padding-right: 0;
+        }
+        .col-step-card {
+            width: 100%;
+            .step-card{
+                .no-margin-top{
+                    display: block;
+                }
+            }
+            
+        }
+        
+    }
+    
+}

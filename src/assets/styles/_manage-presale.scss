@@ -1,0 +1,416 @@
+/* MultisenderERC20NFT */
+
+$launchpad-black1: $sidebar-bg;
+$launchpad-black2: rgba(0, 0, 0, 0.4);
+
+$launchpad-button-bg: $sidebar-menu-bg;
+$launchpad-badge-bg: #BD15E54D;
+
+.manage-presale {
+    .red{
+        color: red;
+    }
+    .my-progress-bar{
+        margin-top: 17px;
+        height: 3px;
+        margin: 0 auto;
+        width: 80%;
+        div{
+            background-color: #70d4fb !important;
+        }
+    }
+    .raised-progress{
+        width: 100%;
+        p{
+            font-size: 24px;
+            text-align: center;
+        }
+    }
+    .deposit-token{
+        margin-top: 20px;
+        padding: 1em 2em;
+    }
+    .token-infos{
+        margin-top: 40px;
+    }
+    .title-label{  
+        display: flex;
+        p{
+            margin-bottom: 0;
+            margin-top: 10px;
+        }
+        div{
+            margin-left: 20px;
+        }
+    }
+    .deposit-tokens :hover{
+        cursor: pointer;
+    }
+    .warning-text{
+        color: red;
+        margin-top: 20px;
+    }
+    .presale-whitelist{
+        margin-top: 100px;
+        .red{
+            margin-bottom: 30px;
+        }
+    }
+    .forms-of-input{
+        margin-top: 50px;
+    }
+    .hint{
+        font-size: 12px;
+    }
+    .not-flex{
+        display: block !important;
+    }
+    .second-blcok{
+        margin-top: 30px;
+    }
+    .additional-presale-details{
+        margin-top: 50px;
+    }
+    .whitelist-status{
+        margin-top: 50px;
+    }
+    .action-buttons{
+        display: flex;
+        button{
+            margin-left: 10px;
+        }
+    }
+    .current-token-balance{
+        margin-top: 20px;
+    }
+    .call-finalize{
+        margin-top: 20px;
+    }
+    .call-finalize.disabled{
+        background-color: #555556;
+    }
+    .cancel-sale{
+        margin-top: 20px;
+    }
+    .finalize-text{
+        margin-top: 20px;
+    }
+    label {
+        font-size: 14px;
+    }
+
+    .create-sale-card {
+        background: black;
+
+        a {
+            margin-left: 1em;
+            color: #DE64ED;
+        }
+
+        img {
+            width: 56px;
+            height: auto;
+        }
+
+        .para-warning {
+            color: red;
+            margin-bottom: 20px;
+        }
+
+        .card-body {
+            width: 90%;
+        }
+    }
+
+    .col-step-card {
+        width: 73%;
+        margin-bottom: 0;
+    }
+
+    .step-card {
+        background: transparent;
+        border: none;
+
+        span {
+            height: 28px;
+            line-height: 28px;
+            font-size: 18px;
+            font-weight: bold;
+            font-family: Raleway;
+            font-style: normal;
+        }
+
+        .step-badge {
+            border-radius: 100%;
+            background: $launchpad-badge-bg;
+            width: 28px;
+            height: 28px;
+            font-size: 14px;
+            // color: #8B2A9B;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .card-title {
+            display: flex;
+            align-items: center;
+        }
+
+        .title-content {
+            margin-left: 0.8em;
+        }
+
+        .forms-sample {
+            margin-top: 4em;
+
+            .form-group.h-form-group {
+                max-width: 350px;
+                margin-top: 2em;
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+
+                label {
+                    margin-bottom: 0px;
+                }
+
+                input {
+                    float: right;
+                }
+            }
+
+            .btn {
+                margin-top: 0.5em;
+                border-radius: 20px;
+                width: 70px;
+                height: 35px;
+                padding: 8px 16px;
+            }
+
+            .btn:hover {
+                opacity: 0.7;
+            }
+
+            .btn-back {
+                border: 1px solid grey;
+                background: transparent;
+            }
+
+            .btn-next,
+            .btn-finish,
+            .btn-submit {
+                background: $launchpad-button-bg;
+                margin-left: 1em;
+            }
+
+            .btn-finish,
+            .btn-submit {
+                width: 100px;
+            }
+
+            #inputTokenName {
+                max-width: 200px;
+            }
+
+            #inputTokenSymbol {
+                max-width: 200px;
+            }
+
+            #inputTokenDecimal {
+                max-width: 200px;
+            }
+
+            #inputSoftCap {
+                max-width: 180px;
+            }
+
+            #inputHardCap {
+                max-width: 180px;
+            }
+
+            #inputMinBuy {
+                max-width: 180px;
+            }
+
+            #inputMaxBuy {
+                max-width: 180px;
+            }
+
+            #inputPresaleStartTime,
+            #inputPresaleEndTime,
+            #inputLiquidityLockedTime {
+                width: 50%;
+                min-width: 150px;
+            }
+        }
+
+        .forms-sample.no-margin-top {
+            margin-top: 0;
+        }
+
+        .form-control {
+            background-color: $launchpad-black2;
+            border: none;
+            border-radius: 6px;
+        }
+    }
+
+    .col-fees-card {
+        margin-top: 1.5em;
+        width: 239.12px;
+        height: 452px;
+
+        .fees-card {
+            background-color: $launchpad-black2;
+            border: 1px solid $launchpad-badge-bg;
+            border-radius: 10px;
+            padding: 16px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            span {
+                font-size: 16px;
+                margin-bottom: 13px;
+            }
+
+            i {
+                margin-bottom: 13px;
+            }
+
+            img {
+                width: 120px;
+                margin-bottom: 13px;
+            }
+        }
+    }
+
+    .col-step-finalize-card {
+        margin-top: 3em !important;
+        height: 700px;
+        background-color: $launchpad-black2;
+        border-radius: 10px;
+        padding: 5% 5% calc(5% + 40px) 5%;
+
+        .btn-back {
+            margin-left: 2em;
+        }
+
+        table {
+            width: 100%;
+            height: 100%;
+
+            tr {
+                td:nth-child(1) {
+                    width: 25%;
+                    font-size: 12px;
+                }
+
+                td:nth-child(2) {
+                    width: 40%;
+                    font-size: 14px;
+                }
+
+                td:nth-child(3) {
+                    width: 35%;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+
+    .col-final-pad {
+        margin-top: 2em;
+        width: 95%;
+    }
+
+    .col-step-timing-card {
+        width: 90%;
+
+        .h-form-group {
+            max-width: 600px !important;
+        }
+    }
+
+    .btn-disable-whitelist{
+        padding: 1em 2em;
+    }
+
+    .btn-update{
+        padding: 1em 2em;
+    }
+}
+.mobile-heading{
+    display: none;
+}
+
+
+@media screen and (max-width: 991px) {  
+
+    .action-buttons{
+        flex-direction: column;
+        button{
+            margin-top: 10px;
+        }
+    }
+    .launchpad-create-manage-presale {
+        .fees-card {
+            span {
+                font-size: 1.6vw !important;
+                margin-bottom: 13px;
+            }
+
+            i {
+                margin-bottom: 13px;
+            }
+
+            img {
+                width: 120px;
+                margin-bottom: 13px;
+            }
+        }
+    }
+    .token-address-container{
+        padding-right: 44.88px;
+        flex-wrap: wrap-reverse;
+        justify-content: space-evenly;
+        margin-top: 20px;
+    }
+
+    .manage-presale {
+        .page-header{
+            display: block !important;
+            text-align: end;
+            h1{
+                display: none;
+            }
+        }
+       
+        .mobile-heading{
+            display: block;
+            font-size: 24px;
+            text-align: center;
+            margin-top: 40px;
+        }
+        .create-sale-card{
+            .card-body{
+                width: 100%;
+            }
+        }
+        .token-address-container{
+            padding-right: 0;
+        }
+        .col-step-card {
+            width: 100%;
+            .step-card{
+                .no-margin-top{
+                    display: block;
+                }
+            }
+            
+        }
+        
+    }
+    
+}

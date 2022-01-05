@@ -1,0 +1,202 @@
+.launchpad-listings {
+    width: 95%;
+    margin: 0 auto;
+    .mobile-heading{
+        display: none;
+    }    
+    .card-header-container {
+        display: flex;
+        justify-content: space-between;
+    }
+    .card-image {
+        width: 64px;
+        height: 60px;
+    }
+    .token-name {
+        font-size: 18px;
+        font-weight: 700;
+    }
+    .sales-time {
+        font-size: 12px;
+        font-weight: 600;
+        text-align: start;
+    }
+    .card-header-subcontainer {
+        display: flex;
+    }
+    .raised {
+        color: #37aee2;
+        font-size: 16px;
+        text-align: center;
+    }
+    .token-content {
+        padding-left: 20px;
+        text-align: start;
+    }
+    #chart p {
+        margin-bottom: 8px;
+    }
+    .token-card-footer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 37px;
+        img {
+            width: 13px;
+            height: 14px;
+        }
+        .custom-contract {
+            margin-bottom: 0;
+            padding-left: 10px;
+        }
+    }
+    .forms-parent {
+        display: flex;
+        justify-content: end;
+        div {
+            width: 250px;
+            padding-left: 10px;
+        }
+    }
+
+    .loadmore-button {
+        text-align: center;
+        margin-top: 40px;
+        button{
+            border-radius: 8px;
+        }
+    }
+
+    .tooltips {
+        position: relative;
+    }
+
+    .tooltiptext {
+        visibility: hidden;
+        width: 286px;
+        background-color: rgba(0, 0, 0, 0.8);
+        color: #fff;
+        text-align: center;
+        border-radius: 6px;
+        padding: 10px 10px;
+        position: absolute;
+        z-index: 1;
+        font-size: 12px;
+        bottom: 150%;
+        left: 50%;
+        margin-left: -79px;
+    }
+
+    .tooltiptext::after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 27%;
+        margin-left: -5px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: rgba(0, 0, 0, 0.8);
+    }
+    .tooltips:hover .tooltiptext {
+        visibility: visible;
+    }
+    .tooltips:hover {
+        cursor: pointer;
+    }
+    .horizon-line {
+        width: 30%;
+        background-color: #e4e7ec;
+        height: 1px;
+        margin-top: 67px;
+    }
+    .page-button-container {
+        width: 28%;
+        display: flex;
+        margin: 0 auto;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .page-button-container {
+        button {
+            width: 36px;
+            text-align: center;
+            padding: 8px;
+            border-radius: 8px;
+        }
+        p {
+            margin-bottom: 0;
+        }
+    }
+    .sub-launchpad {
+        margin-bottom: 59px;
+    }
+    .chart-lables {
+        position: absolute;
+        top: 40%;
+        left: 0;
+        right: 0;
+    }
+    .active-status {
+        width: 53px;
+        margin: 0 auto;
+        padding: 5px;
+        background-color: #00ac1c;
+        border-radius: 25px;
+        margin-bottom: 0;
+        font-size: 7px;
+    }
+    .percent {
+        font-size: 24px;
+    }
+    .pending-status {
+        width: 53px;
+        margin: 0 auto;
+        padding: 5px;
+        background-color: #ffc700;
+        border-radius: 25px;
+        margin-bottom: 0;
+        font-size: 7px;
+    }
+    .failed-status{
+        width: 53px;
+        margin: 0 auto;
+        padding: 5px;
+        background-color: #D91A00;
+        border-radius: 25px;
+        margin-bottom: 0;
+        font-size: 7px;
+    }
+    .link-to-presale-live{
+        text-decoration: none;
+        color: white;
+
+    }
+    .link-to-presale-live:hover{
+        text-decoration: none ;
+        color: white;
+    }
+}
+
+@media screen and (max-width: 991px) {  
+    .launchpad-listings {
+        .page-header{
+            display: block !important;
+            text-align: end;
+            h1{
+                display: none;
+            }
+        }
+        .mobile-heading{
+            display: block;
+            font-size: 24px;
+            text-align: center;
+            margin-top: 40px;
+        }
+        .page-button-container{
+            width: 100%;
+        }
+        .horizon-line{
+            width: 100%;
+        }
+    }
+}

@@ -1,0 +1,188 @@
+/* FAQ */
+
+$launchpad-black1: $sidebar-bg;
+$launchpad-black2: rgba(0, 0, 0, 0.4);
+
+$launchpad-button-bg: $sidebar-menu-bg;
+$launchpad-badge-bg: #22a1f7ad;
+
+.div-faq {
+    width: 100%;
+    .div-faq-title{
+        border-radius: 5px;
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 2em;
+        .faq-title{
+            text-align: center;
+            color: white;
+            font-size: 26px;
+            font-weight: bolder;
+        }
+    }
+    .MuiPaper-root {
+        background-color: transparent;
+        border-bottom: 1px solid #4f7596;
+        .MuiAccordionSummary-content{
+            display: block;
+            .faq-subtitle{
+                color: $body-color;
+                font-size: 16px;
+                font-weight: bolder;
+                .div-expanded-status{
+                    float: right;
+                    font-size: 16px;
+                    color: $body-color;
+                }
+            }
+        }
+
+        .faq-description{
+            width: 100%;
+            text-align: center;
+            color: $body-color;
+            font-size: 15px;
+            margin-bottom: 2em;
+        }
+    
+        label {
+            font-size: 14px;
+            color: white;
+        }
+
+        .MuiAccordionDetails-root{
+            display: block;  
+            .div-tutorial-video{
+                flex: none;
+                border-radius: 5px;
+                width: 100%;
+                margin: 0 auto;
+                .tutorial-video-title{
+                    text-align: center;
+                    color: white;
+                    font-size: 26px;
+                    font-weight: bolder;
+                }
+                .tutorial-video{
+                    margin: 1em auto;
+                    width: 66%;
+                    height: 300px;
+                    border: 5px solid $body-color;            
+                }
+            }
+        
+            .div-how-to{
+                width: 100%;
+                .how-to-description{
+                    width: 70%;
+                    margin: 0 auto;
+                    .how-to-subdescription{
+                        .info-list{
+                            margin-top: 0.3em;
+                            .info-list__item{
+                                text-align: initial;
+                                list-style-type: decimal;
+                                list-style-position: inside;
+                                color: $card-title-color;
+                            }
+                        }
+                        p{
+                            margin-top: 0.5em;
+                            color: $card-title-color;
+                        }
+                    }
+
+                    .how-to-subtitle{
+                        color: $card-title-color;
+                        font-size: 16px;
+                        font-weight: bold;
+                    }
+                }
+                .only-description{
+                    width: 100%;
+                    color: $card-title-color;
+                }
+
+            }
+        }
+    }
+
+}
+
+
+.mobile-heading{
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .div-faq {
+        .row-header{
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .div-faq {
+        .fees-card {
+            span {
+                font-size: 1.6vw !important;
+                margin-bottom: 13px;
+            }
+
+            i {
+                margin-bottom: 13px;
+            }
+
+            img {
+                width: 120px;
+                margin-bottom: 13px;
+            }
+        }
+    }
+
+    .token-address-container{
+        background-color: $sidebar-bg;
+        padding-right: 44.88px;
+        flex-wrap: wrap-reverse;
+        justify-content: space-evenly;
+    }
+}
+
+@media screen and (max-width: 991px) {  
+    .div-faq {
+        .page-header{
+            display: block !important;
+            text-align: end;
+            h1{
+                display: none;
+            }
+        }
+       
+        .mobile-heading{
+            display: block;
+            font-size: 24px;
+            text-align: center;
+            margin-top: 40px;
+        }
+        .create-sale-card{
+            .card-body{
+                width: 100%;
+            }
+        }
+        .token-address-container{
+            padding-right: 0;
+        }
+        .col-step-card {
+            width: 100%;
+            .step-card{
+                .no-margin-top{
+                    display: block;
+                }
+            }
+            
+        }
+        
+    }
+    
+}

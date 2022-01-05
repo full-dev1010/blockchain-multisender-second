@@ -1,0 +1,162 @@
+/* AboutUs */
+
+$launchpad-black1: $sidebar-bg;
+$launchpad-black2: rgba(0, 0, 0, 0.4);
+
+$launchpad-button-bg: $sidebar-menu-bg;
+$launchpad-badge-bg: #22a1f7ad;
+
+.div-aboutus {
+    width: 100%;
+    .aboutus-title{
+        width: 100%;
+        color: white;
+        margin: 0em auto;
+        font-size: 26px;
+        font-weight: bolder;
+        text-align: center;
+    }
+    .aboutus-description{
+        width: 100%;
+        text-align: center;
+        color: $body-color;
+        font-size: 15px;
+        margin-bottom: 2em;
+    }
+
+    label {
+        font-size: 14px;
+        color: white;
+    }
+
+    .div-tutorial-video{
+        border-radius: 5px;
+        width: 100%;
+        margin: 0 auto;
+        .tutorial-video-title{
+            text-align: center;
+            color: white;
+            font-size: 26px;
+            font-weight: bolder;
+        }
+        .tutorial-video{
+            margin: 1em auto;
+            width: 66%;
+            height: 300px;
+            border: 5px solid $body-color;            
+        }
+    }
+
+    .row-header{
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .how-to-title{
+        width: 60%;
+        color: white;
+        margin: 1em auto;
+        font-size: 26px;
+        font-weight: bolder;
+        text-align: center;
+    }
+
+    .how-to-description{
+        width: 70%;
+        margin: 0 auto;
+        .how-to-subdescription{
+            .info-list{
+                margin-top: 0.3em;
+                .info-list__item{
+                    text-align: initial;
+                    list-style-type: decimal;
+                    list-style-position: inside;
+                }
+            }
+        }
+        .how-to-subtitle{
+            color: $card-title-color;
+            font-size: 16px;
+            font-weight: bold;
+        }
+    }
+
+}
+
+
+.mobile-heading{
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .div-aboutus {
+        .row-header{
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .div-aboutus {
+        .fees-card {
+            span {
+                font-size: 1.6vw !important;
+                margin-bottom: 13px;
+            }
+
+            i {
+                margin-bottom: 13px;
+            }
+
+            img {
+                width: 120px;
+                margin-bottom: 13px;
+            }
+        }
+    }
+
+    .token-address-container{
+        background-color: $sidebar-bg;
+        padding-right: 44.88px;
+        flex-wrap: wrap-reverse;
+        justify-content: space-evenly;
+    }
+}
+
+@media screen and (max-width: 991px) {  
+    .div-aboutus {
+        .page-header{
+            display: block !important;
+            text-align: end;
+            h1{
+                display: none;
+            }
+        }
+       
+        .mobile-heading{
+            display: block;
+            font-size: 24px;
+            text-align: center;
+            margin-top: 40px;
+        }
+        .create-sale-card{
+            .card-body{
+                width: 100%;
+            }
+        }
+        .token-address-container{
+            padding-right: 0;
+        }
+        .col-step-card {
+            width: 100%;
+            .step-card{
+                .no-margin-top{
+                    display: block;
+                }
+            }
+            
+        }
+        
+    }
+    
+}

@@ -1,0 +1,224 @@
+/* Forms */
+
+.form-group {
+  margin-bottom: 1rem;
+}
+.input-group-append,
+.input-group-prepend {
+  color: $new-input-placeholder-color;
+  width: auto;
+  border: none;
+
+  .input-group-text {
+    border-color: $border-color;
+    padding: $input-padding-y .75rem;
+    color: $input-placeholder-color;
+    background: none;
+  }
+}
+.form-control {
+  border: 'none';
+  height: calc(2.25rem + 2px);
+  font-weight: normal;
+  font-size: $input-font-size; 
+  padding: 0.625rem 0.6875rem;
+  background-color: $new-input-bg;
+  border-radius: 8px;
+  color: #ffffff;
+  &:focus {
+    border: 'none' !important;
+    background-color: $new-input-bg;
+    color: #ffffff;
+  }
+  &.form-control-lg {
+    padding: 0.94rem .75rem;
+    height: calc(2.875rem + 2px);
+  }
+
+  &.form-control-sm {
+    padding: 0.5rem .75rem;
+    height: calc(1.8125rem + 2px);
+  }
+  &::placeholder {
+    color: $text-muted;
+    font-size: $input-placeholder-font-size;
+  }
+}
+.navbar {
+  .form-control {
+    width: 100%;
+    border-radius: 6px;
+    &:focus {
+      border: none;
+    }
+  }
+}
+
+//============= START HEAD BAR FLOW TEXT ===============
+.scrolltext {
+  height: 32px;	
+  overflow: hidden;
+  position: relative;
+  background-color: #15151f;
+  border-radius: 8px;
+ }
+ .scrolltext div {
+  font-size: 16px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  text-align: start;
+  padding: 3px;
+  /* Starting position */
+  -moz-transform:translateX(100%);
+  -webkit-transform:translateX(100%);	
+  transform:translateX(100%);
+  /* Apply animation to this element */	
+  -moz-animation: example1 35s linear infinite;
+  -webkit-animation: example1 35s linear infinite;
+  animation: example1 55s linear infinite;
+ }
+ /* Move it (define the animation) */
+ @-moz-keyframes example1 {
+  0%   { -moz-transform: translateX(100%); }
+  100% { -moz-transform: translateX(-100%); }
+ }
+ @-webkit-keyframes example1 {
+  0%   { -webkit-transform: translateX(100%); }
+  100% { -webkit-transform: translateX(-100%); }
+ }
+ @keyframes example1 {
+  0%   { 
+  -moz-transform: translateX(100%); /* Firefox bug fix */
+  -webkit-transform: translateX(100%); /* Firefox bug fix */
+  transform: translateX(100%); 		
+  }
+  100% { 
+  -moz-transform: translateX(-100%); /* Firefox bug fix */
+  -webkit-transform: translateX(-100%); /* Firefox bug fix */
+  transform: translateX(-100%); 
+  }
+ }
+ .leftlabel {
+  width: 92px;
+  height: 32px;
+  position: absolute;
+  background-color: #101010;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+.labelletters{
+  position: absolute;
+  width: 92px;
+  z-index: 1000;
+  background-color: black;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  font-size: 12px;
+  height: 32px;
+  margin: 0;
+  margin-bottom: 0 !important;
+  padding-left: 8px;
+}
+.top-pair{
+  padding: 5px;
+}
+.question-mark{
+  font-size: 16px;
+  padding-left: 5px;
+}
+.minus{
+  color: #D91A00;
+}
+.plus{
+  color: #31B902;
+}
+.pairs{
+  font-size: 16px;
+  color: $navbar-button-hover;
+  font-weight: bold;
+  margin-bottom: 0;
+  margin-right: 14px;
+}
+.parent-item{
+  display: flex;
+  align-items: center;
+}
+.item-number{
+  font-size: 16px;
+  margin-bottom: 0;
+  margin-right: 8px;
+}
+
+//============= END HEAD BAR FLOW TEXT ================
+
+select {
+  &.form-control {
+    padding: .4375rem .75rem;
+    border: 0;
+    outline: 1px solid #322f2f;
+    color: $new-input-placeholder-color;
+    &:focus {
+      outline: 1px solid $border-color;
+    }
+    @each $color, $value in $theme-colors {
+      &.border-#{$color} {
+        outline: 1px solid $value;
+        &:focus {
+          outline: 1px solid $value;
+        }
+      }
+    }
+  }
+}
+.form-group {
+  label {
+    font-size: $default-font-size;
+    line-height: 1;
+    vertical-align: top;
+  }
+  &.has-danger {
+    .form-control {
+      border-color: theme-color(danger);
+    }
+  }
+  .file-upload-default {
+    visibility: hidden;
+    position: absolute;
+  }
+  .file-upload-info {
+    background: transparent;
+  }
+}
+
+.form-check {
+  min-height: 18px;
+  padding-left: 1.25rem;
+}
+
+div {
+  &.tagsinput {
+    background: transparent;
+  }
+}
+
+.custom-file {
+  .visibility-hidden {
+  visibility: hidden;
+  }
+  .custom-file-label {
+    background: $input-bg;;
+    border: 1px solid $border-color;
+    height: calc(2.25rem + 2px);
+    font-weight: normal;
+    font-size: 0.875rem;
+    padding: 0.625rem 0.6875rem;
+    border-radius: 2px;
+    &:after {
+      background-color: theme-color(primary);
+      height: auto;
+      @extend .btn-primary;
+    }
+  }
+}

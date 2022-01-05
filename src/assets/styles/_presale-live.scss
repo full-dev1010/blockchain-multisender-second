@@ -1,0 +1,320 @@
+.presale-live {
+    padding: 0 30px;
+    .sub-presale-live{
+        justify-content: end !important;
+        padding: 0 15px;
+    }
+    .presale-card{
+        background-color: rgba(0,0,0,0.4);
+        padding: 24px;
+        border-radius: 8px;
+        width: 100%;
+        input[placeholder] {
+            text-align: center;
+        }
+    }
+    .left-card{
+        border-radius: 0;
+    }
+    .forms-parent {
+        display: flex;
+        justify-content: end;
+        padding-right: 15px;
+        div {
+            width: 250px;
+            padding-left: 10px;
+        }
+    }
+    .middle-card-header{
+        display: flex;
+    }
+    .token-content {
+        padding-left: 20px;
+        text-align: start;
+    }
+    .token-name {
+        font-size: 18px;
+        font-weight: 700;
+    }
+    .left-card-header{
+        font-size: 24px;
+        font-weight: 700;
+    }
+    .left-card-subheader{
+        font-size: 24px;
+        margin-top: 70px;
+    }
+    .warning-header{
+        color: #D91A00;
+        font-size: 24px;
+        font-weight: 700;
+        margin-top: 40px;
+    }
+    
+    .presale-container{
+        display: flex;
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+    .custom-contract-parent {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+        img {
+            width: 13px;
+            height: 14px;
+        }
+        .custom-contract {
+            margin-bottom: 0;
+            padding-left: 10px;
+        }
+    }
+    .progress-status{
+        color:#37AEE2;
+        margin-top: 32px;
+        text-align: center;
+    }
+    .contribute-button-container{
+        text-align: center;
+        margin-top: 16px;
+        button{
+            border-radius: 8px;
+        }
+    }
+    .sale-end-time{
+        text-align: center;
+        margin-top: 24px;
+    }
+    .tokenswillget{
+        text-align: center;
+    }
+    .explain{
+        margin-top: 45px;
+    }
+    .presale-address{
+        margin-top: 64px;
+        text-align: center;
+        a{
+            color: #70d4fb;
+            word-break: break-word;
+        }
+    }
+    .token-address{
+        margin-top: 24px;
+        text-align: center;
+        a{
+            color: #70d4fb;
+            word-break: break-word;
+        }
+    }
+    .warn{
+        margin-top: 12px;
+        color: #D91A00;
+        text-align: center;
+    }
+    .enabled-whitelist-card{
+        text-align: center;
+        width: 80%;
+        margin: 32px auto;
+        border-radius: 8px;
+        padding: 12px;
+        background-color: #090b0f;
+        .whitelist-card-header{
+            color:#31B902;
+        }
+        .whitelist-content{
+            font-weight: 700;
+            margin-top: 30px;
+        }
+        .whitelist-warn{
+            margin-top: 50px;
+            color: #d91a00;
+            i{
+                color: #ffd10E;
+            }
+        } 
+    }
+    
+    .bnb-to-token{
+        border: 1px solid #8B2A9B;
+        height: 42px;
+        margin: 20px auto;
+        width: 80%;
+    }
+    .my-progress-bar{
+        margin-top: 17px;
+        height: 3px;
+        margin: 0 auto;
+        width: 80%;
+        div{
+            background-color: #70d4fb !important;
+        }
+    }
+    .ctr-rev-container{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-top: 16px;
+        padding: 0 16px;
+        div{
+            border: 1px solid #8b2a9b;
+            padding: 10px 20px;
+            border-radius: 8px;
+            // width: 270px;
+            text-align: center;
+            margin-bottom: 24px;
+            p{
+                margin-bottom: 0;
+            }
+            .amount1{
+                font-weight: 600;
+            }
+        }
+    }
+    .information{
+        display: flex;
+        gap: 64px;
+        margin-top: 88px;
+        .info-labels{
+            text-align: end;
+            width: 50%;
+        }
+        .info-values{
+            width: 50%;
+        }
+        p{
+            font-size: 0.85vw;
+        }
+    }
+    .withdrawbutton{
+        text-align: center;
+        margin-top: 41px;
+            button{
+                height: 40px;
+                border-radius: 8px;      
+            }
+    }
+    .right-card-parent{
+        margin-top: 15px;
+    }
+    .right-card-header{
+        font-weight: 700;
+        text-align: center;
+    }
+    .like-container{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        div{
+            padding: 10px 10px;
+            width: auto;
+            background-color: rgba(0, 0, 0, 0.8);
+            border-radius: 8px;
+            display: flex;
+            margin-bottom: 12px;
+            p{
+                font-size: 16px;
+                margin-left: 9px;
+                margin-bottom: 0;
+            }
+            img{
+                width: 24px;
+                height: 24px;
+            }
+        }
+    }
+    .follow{
+        margin: 28px auto;
+        width: 87%;
+    }
+    .comments-community{
+        display: flex;
+        justify-content: space-around;
+        p{
+            font-size: 16px;
+            margin-bottom: 0;
+            padding-bottom: 5px;
+            border-bottom: 2px solid #8B2A9B;
+        }
+    }
+    .comments-content{
+        border-radius: 8px;
+        border: 1px solid #8B2A9B;
+        margin-top: 28px;
+        p{
+            font-size: 16px;
+            margin: 11px auto;
+            text-align: center;
+        }
+    }
+    .presale-end-message{
+        text-align: center;
+        margin-top: 44px;
+    }
+    .trade-pancakeswap, .trade-sphynxswap{
+        margin-top: 32px;
+        img{
+            width: 23.76px;
+            height: 24px;
+        }
+        button{
+            display: flex;
+            align-items: center;
+            margin: 0 auto;
+            border-radius: 8px;
+        }
+    }
+
+    .claim-token{
+        button{
+            background: #31B902;
+            display: flex;
+            align-items: center;
+            margin: 1em auto;
+            padding: 1em 2em;
+            border-radius: 8px;
+        }
+    }
+
+    .locker{
+        text-align: center;
+        margin-top: 1em;
+            button{
+                height: 40px;
+                border-radius: 8px;      
+            }
+    }
+
+    .if-text{
+        margin-top: 32px;
+        text-align: center;
+        p{
+            width: 80%;
+            margin: 0 auto;
+        }
+    }
+    
+    @media screen and (max-width: 992px) {
+        .follow{
+            width: 80%;
+        }
+        .information{
+            gap: 20px;
+            p{
+                letter-spacing: -0.2px;
+                font-size: 12px !important;
+            }
+        }
+        .middle-card{
+            padding-left: 12px;
+            padding-right: 12px;
+        }
+      }
+}
+
+@media screen and (max-width: 992px) {
+    .presale-live{
+        padding: 0;
+    }
+}
